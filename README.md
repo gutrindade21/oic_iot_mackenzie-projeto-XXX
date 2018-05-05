@@ -5,8 +5,8 @@
 ## Integrantes do grupo:
 
 Gustavo Trindade de Avila - 31515649
-Joao Ailton Junior da Silva
-Diego Muniz Sobrinho
+Joao Ailton Junior da Silva - 31505635
+Diego Muniz Sobrinho - 31461328
 
 _______________________________________
 Obs:
