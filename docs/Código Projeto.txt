@@ -1,4 +1,5 @@
 /*************************************************************
+
   Download latest Blynk library here:
     https://github.com/blynkkk/blynk-library/releases/latest
 
@@ -31,6 +32,7 @@
 /* Comment this out to disable prints and save space */
 #define BLYNK_PRINT SwSerial
 
+
 #include <Wire.h>
 #include <OneWire.h>
 #include <DallasTemperature.h>
@@ -55,12 +57,14 @@ float temp;
 #include <SoftwareSerial.h>
 SoftwareSerial SwSerial(10, 11); // RX, TX
 
+
 // You should get Auth Token in the Blynk App.
 // Go to the Project Settings (nut icon).
 char auth[] = "e9eef5c379d04bf5801021b17e04dfc3";
 
 // Attach virtual serial terminal to Virtual Pin V1
 WidgetTerminal terminal(V3);
+
 
 // You can send commands from Terminal to your hardware. Just use
 // the same Virtual Pin as your Terminal Widget
@@ -69,14 +73,17 @@ BLYNK_WRITE(V3)
 
   // if you type "Marco" into Terminal Widget - it will respond: "Polo:"
   if (String("Marco") == param.asStr()) {
+  
     terminal.println("You said: 'Marco'") ;
     terminal.println("I said: 'Polo'") ;
+    
   } else {
 
     // Send it back
     terminal.print("You said:");
     terminal.write(param.getBuffer(), param.getLength());
     terminal.println();
+    
   }
 
   // Ensure everything is sent
